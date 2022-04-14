@@ -1,0 +1,16 @@
+﻿Kiểu dữ liệu cấu trúc
+Khai báo và định nghĩa 1 kiểu dữ liệu mới ==> struct
+
+int / long / float / ... ==> kiểu có sẵn trong lập trình
+
+typedef struct
+{
+  //khai báo 8 biến thành phần
+} sv;
+
+sv a; ==> biến a khi đó sẽ lưu được 8 giá trị thành phần tương ứng với kiểu sv
+
+sv b[100]; ==> mảng b khi đó lưu được tối đa 800 giá trị thành phần tương ứng với kiểu sv
+
+để truy xuất từng giá trị thành phần trong biến/phần tử thì sử dụng dấu . truy xuất thành phần tương ứng
+

@@ -1,0 +1,11 @@
+﻿B1: Khai báo biến
+Khai báo biến được sử dụng bao gồm
++ Biến đầu vào
++ Biến đầu ra 
++ Biến trung gian
+
+B2: Nhập giá trị đầu vào
+
+B3: Tính theo yêu cầu đề bài
+
+B4: In kết quả màn hình theo yêu cầu 

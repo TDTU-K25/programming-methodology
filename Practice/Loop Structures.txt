@@ -1,0 +1,5 @@
+dùng for khi biết trước số lần lặp
+
+dùng while khi không biết trước số lần lặp và cần kiểm tra đk trước khi lặp
+
+dùng do while khi không biết trước số lần lặp và thực hiện hành động lặp trước rồi mới kt đk lặp

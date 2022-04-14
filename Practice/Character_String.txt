@@ -1,0 +1,17 @@
+﻿Khai báo chuỗi: ==> giống như mảng 1 chiều (mảng 1 chiều lưu giá trị số)
+===> Chuỗi lưu ký tự
+char s[100]; ==> Khai báo chuỗi s có 99 kí tự, 1 ký tự '\0' kết thúc chuỗi
+
+Nhập giá trị cho chuỗi:
+-fgets(tên chuỗi, độ dài, thư viện);
+-scanf("%s",tên chuỗi); (Không đọc đc white space)
+
+VD: char s[10];
+fgets(s, 10, stdin); ==> stdin: lấy giá trị từ bàn phím
+
+Xuất giá trị chuỗi ra màn hình:
+-printf("%s",tên chuỗi);
+-puts(tên chuỗi);
+
+Thực hiện tính toán và thao tác trên chuỗi giống như mảng 1 chiều
+Trong chuỗi không có biến n, do vậy sẽ biến n được thay thế bằng câu lệnh strlen()

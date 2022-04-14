@@ -1,0 +1,20 @@
+﻿Đệ Quy
+==> là 1 hàm mà trong hàm có gọi lại chính nó
+Lưu ý:
+- Khi thực hiện 1 yêu cầu đệ quy thì cần phân tích bài toán ở mức độ nhỏ hơn 1 cấp
+- Thông thường đệ quy sẽ được đặt trong return
+- Để đệ quy không bị vô tận thì phải đặt điều kiện dừng
+tong(5)
+int tong(int n)
+{
+	if(n == 0)
+		return 0;
+	return n + tong(n-1);
+}
+
+	5 + tong(4)
+	  4 + tong(3)
+	    3 + tong(2)
+	      2 + tong(1)
+	        1 + tong(0)
+		  0

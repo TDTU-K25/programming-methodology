@@ -1,0 +1,65 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#define MAX 100
+
+void NhapSoPhanTu(int *n)
+{
+	do
+	{
+		printf("Nhap so phan tu: ");
+		scanf("%d",&*n);
+	} while(*n < 0 || *n > MAX);
+}
+
+void NhapMang(int a[], int n)
+{
+	int i;
+	for(i = 0; i < n; i++)
+	{
+		printf("Nhap phan tu thu %d: ",i+1);
+		scanf("%d",&a[i]);
+	}
+}
+
+void XuatMang(int a[], int n)
+{
+	int i;
+	for(i = 0; i < n; i++)
+	{
+		printf("%5d",a[i]);
+	}
+}
+
+void HoanVi(int *x, int*y)
+{
+	int temp = *x;
+	*x = *y;
+	*y = temp;
+}
+
+void SapXepMangTangDan(int a[], int n)
+{
+	int i,j;
+	for(i = 0; i < n - 1; i++)
+	{
+		for(j = i + 1; j < n; j++)
+		{
+			if(a[i] > a[j])
+				HoanVi(&a[i],&a[j]);
+		}
+	}
+}
+
+void main()
+{
+	int n;
+	int a[MAX];
+	NhapSoPhanTu(&n);
+	NhapMang(a,n);
+	printf("Mang la: ");
+	XuatMang(a,n);
+	SapXepMangTangDan(a,n);
+	printf("\nMang sau khi xep tang dan la: ");
+	XuatMang(a,n);
+}

@@ -1,0 +1,46 @@
+﻿Đọc/Ghi tập tin
+
+Hiện tại. Viết chương trình 
+==> nhập trực tiếp từ bàn phím
+(không kiểm soát được giá trị nhập, KHÔNG LƯU)
+==> xuất kết quả ra màn hình
+(KHÔNG LƯU ĐƯỢC KẾT QUẢ)
+
+THAO TÁC ĐỌC VÀ GHI file
+-Đọc giá trị trong file và gán vào biến/mảng/chuỗi tương ứng trong chương trình
+- Ghi kết quả ra tập tin (file) lưu trữ kết quả đã thực hiện
+
+THAO TÁC TRÊN TẬP TIN
+
+FILE *fread (khai báo con trỏ file) (nên có kí tự 'f' ở đầu tên con trỏ file để dễ phân biệt)
+
+fread = fopen("input.txt", "r"); (mở tập tin)
+===> tập tin input.txt phải được lưu chung với thư mục chứa source code
+
+fscanf(fread,"%d",&n); => đọc giá trị từ file và gán vào biến
+fgets(s, 100, fread); => đọc chuỗi từ file và gán giá trị vào chuỗi
+
+fprintf(fread, "Ket qua la: %d", n); => ghi nội dung vào file
+
+fclose(fread);
+
+Phân biệt và tách đoạn code đọc file riêng và ghi file riêng
+
+Bài 1: Đọc data từ input01.txt (20 dòng mỗi dòng 1 số nguyên).
+Cộng các dòng và ghi kết quả vào file output.txt
+
+Bài 2: Đọc data từ input02.txt (5 dòng mỗi dòng 1 chuỗi)
+ghi kết quả vào file output.txt
+
+Bài 3:
+In ra màn hình: Nhập tên tập tin cần đọc
+===> Chương trình tự dộng đọc nội dung trong tập tin được yêu cầu
+trong tập tin
+	     dòng 1 ==> Chuỗi ==> Le Khac Thanh Tung
+	     dòng 2 ==> Mảng ==> 1 2 3 4 5 6
+In ra yêu cầu thao tác trên file
+	     1: thao tác trên chuỗi ==> 1
+	     2: thao tác trên mảng
+==> chương trình tự động thực hiện theo lựa chọn
+In ra yêu cầu: nhập nội dung cần tìm: ==> Tung
+Ghi kết quả vào file output: có/không nội dung cần tìm
